@@ -13,7 +13,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/*border: 0;*/
+	border: 0;
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
@@ -21,7 +21,6 @@ time, mark, audio, video {
 
 *{
     box-sizing: border-box;
-    border:1px solid gray;
     max-width: 100%;
 }
 
@@ -152,4 +151,67 @@ header{
 /*footer section styles*/
 footer{
     background-color: #F9E7DC;
+}
+
+/*Media Queries*/
+/*Tablet view*/
+@media (max-width:800px){
+    nav a{
+        width:15%;
+    }
+    /*header section style*/
+    .image img{
+        width:80%;
+    }
+    /*camp section style*/
+    .camp div{
+        width:45%;
+    }
+    /*background image section*/
+    .bg-img{
+        height: 60vh;
+        background-position: center;
+    }
+}
+
+/*Phone View*/
+@media (max-width:500px){
+    /*nav section stlye*/
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav a{
+        width:50%;
+        margin:2% 0;
+    }
+
+    /*header styles*/
+    header{
+        flex-wrap: wrap;
+    }
+    .image{
+        width: 80%;
+    }
+    .title{
+        width: 80%;
+        margin-top:4%;
+    }
+    .title div{
+        width: 100%;
+    }
+
+    /*camp section style*/
+    .camp div{
+        width: 80%;
+    }
+
+    .camp div img{
+        width:60%;
+    }
+    /*bg img section*/
+    .bg-img{
+        height:40vh;
+    }
 }
